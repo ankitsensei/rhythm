@@ -341,9 +341,7 @@ export default function App() {
             </button>
             <div className="flex items-center justify-between">
               <div className="flex items-center justify-center gap-2">
-                <span onClick={handleVolMute}
-                  className="cursor-pointer">
-                <span>
+                <span onClick={handleVolMute} className="cursor-pointer">
                   {volume === 0 && <FaVolumeOff />}
                   {volume > 0 && volume <= 60 && <FaVolumeLow />}
                   {volume > 60 && <FaVolumeHigh />}
